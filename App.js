@@ -42,9 +42,7 @@ renderRow =({item}) => {
    
   );
   
-  
 }
-
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
@@ -66,7 +64,7 @@ const styles = StyleSheet.create({
     color: '1c7da5'
   },
   row: {
-    borderColor: '#1f3243',
+    borderColor: '#7b7983',
     borderBottomWidth: 1,
     flexDirection: 'row',
     marginLeft: 10,
@@ -79,8 +77,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#1f3243',
     borderColor: '#1f3243',
-    borderRadius: 25,
-    //rborderWidth: 1,
+    borderRadius: 40,
     justifyContent: 'center',
     height: 70,
     width: 70,
@@ -106,7 +103,8 @@ const styles = StyleSheet.create({
   webaddress: {
     color: '#3c4f62 ',
     fontSize: 16,
-    marginLeft: 25
+    marginLeft: 25,
+    fontStyle: 'italic',
   },
 
 });
