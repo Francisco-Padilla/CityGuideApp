@@ -7,9 +7,12 @@ import {
   StatusBar,
   Text,
 } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
 import data from './locations.json';
 
+//const chicagoIcon = require('./assets/icon.png');
 const chicagoIcon = require('./images/chicago.png');
+
 
 renderRow =({item}) => {
   return (
@@ -27,7 +30,10 @@ renderRow =({item}) => {
 }
 
  export default function  App () {
-   
+  SplashScreen.preventAutoHideAsync();
+  setTimeout(SplashScreen.hideAsync, 2000);
+
+
   return (
     
     <View style={styles.mainContainer}>
